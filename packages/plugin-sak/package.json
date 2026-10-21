@@ -5,17 +5,52 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
-  "files": ["dist", "README.md"],
-  "scripts": { "build": "tsc -p tsconfig.json" },
-  "dependencies": { "@dfm-fi/mcp-bridge": "^0.1.0" },
-  "peerDependencies": { "solana-agent-kit": "^2.0.0", "zod": "^3.24.0" },
-  "devDependencies": { "solana-agent-kit": "2.0.10" },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@dfm-fi/mcp-bridge": "^0.1.0"
+  },
+  "peerDependencies": {
+    "solana-agent-kit": "^2.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "solana-agent-kit": "2.0.10"
+  },
   "license": "MIT",
   "author": "DFM <top@dfm.finance>",
-  "repository": { "type": "git", "url": "git+https://github.com/DFM-Finance/dfm-plugins.git", "directory": "packages/plugin-sak" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFM-Finance/dfm-plugins.git",
+    "directory": "packages/plugin-sak"
+  },
   "homepage": "https://github.com/DFM-Finance/dfm-plugins#readme",
-  "bugs": { "url": "https://github.com/DFM-Finance/dfm-plugins/issues" },
-  "engines": { "node": ">=20" },
-  "keywords": ["dfm", "solana", "solana-agent-kit", "plugin", "mcp", "defi"]
+  "bugs": {
+    "url": "https://github.com/DFM-Finance/dfm-plugins/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dfm",
+    "solana",
+    "solana-agent-kit",
+    "plugin",
+    "mcp",
+    "defi"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
