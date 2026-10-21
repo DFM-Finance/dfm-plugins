@@ -1,0 +1,19 @@
+{
+  "name": "@dfm-fi/mcp-bridge",
+  "version": "0.1.0",
+  "description": "Bridge to DFM's MCP server (@dfm-fi/agent): spawn, list tools, JSON Schema to zod, call tools.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md"],
+  "scripts": { "build": "tsc -p tsconfig.json" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.32.1", "zod": "^3.25.0" },
+  "license": "MIT",
+  "author": "DFM <top@dfm.finance>",
+  "repository": { "type": "git", "url": "git+https://github.com/DFM-Finance/dfm-plugins.git", "directory": "packages/core" },
+  "homepage": "https://github.com/DFM-Finance/dfm-plugins#readme",
+  "bugs": { "url": "https://github.com/DFM-Finance/dfm-plugins/issues" },
+  "engines": { "node": ">=20" },
+  "keywords": ["dfm", "solana", "mcp", "agent", "defi"]
+}
